@@ -17,6 +17,7 @@ class  booksPrompt(Cmd):
 
     def default(self, line):
         print 'Hola'
+
 def get_files():
     """ Returns the list of files to be read """
     return ['csv', 'pipe', 'slash']
@@ -31,6 +32,7 @@ def return_records():
     return records
 
 if __name__ == "__main__":
-    for item in return_records():
-        print item
+    # for item in return_records():
+    #    print item
+    
     booksPrompt().onecmd(' '.join(sys.argv[1:]))
